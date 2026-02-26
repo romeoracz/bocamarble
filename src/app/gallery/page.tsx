@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { SITE, CTA } from "@/lib/constants";
 import { BreadcrumbSchema, GallerySchema } from "@/components/SchemaMarkup";
@@ -19,18 +20,18 @@ export const metadata: Metadata = {
 };
 
 const GALLERY_ITEMS = [
-  { title: "Calacatta Gold Kitchen", category: "Kitchen", material: "Marble", location: "Royal Palm, Boca Raton" },
-  { title: "Taj Mahal Waterfall Island", category: "Kitchen", material: "Quartzite", location: "Boca West" },
-  { title: "Carrara Master Bathroom", category: "Bathroom", material: "Marble", location: "The Sanctuary, Boca Raton" },
-  { title: "Absolute Black Outdoor Kitchen", category: "Outdoor", material: "Granite", location: "Highland Beach" },
-  { title: "Silestone Modern Kitchen", category: "Kitchen", material: "Quartz", location: "Mizner Park, Boca Raton" },
-  { title: "Statuario Book-Match Wall", category: "Feature Wall", material: "Marble", location: "Delray Beach" },
-  { title: "Super White Kitchen & Island", category: "Kitchen", material: "Quartzite", location: "Parkland" },
-  { title: "Blue Bahia Statement Bar", category: "Commercial", material: "Granite", location: "Fort Lauderdale" },
-  { title: "Calacatta Quartz Bathroom", category: "Bathroom", material: "Quartz", location: "Coral Springs" },
-  { title: "Cristallo Quartzite Kitchen", category: "Kitchen", material: "Quartzite", location: "West Palm Beach" },
-  { title: "Carrara Shower Surround", category: "Bathroom", material: "Marble", location: "Boca Raton" },
-  { title: "Fantasy Brown Kitchen", category: "Kitchen", material: "Granite", location: "Wellington" },
+  { title: "Calacatta Gold Kitchen", category: "Kitchen", material: "Marble", location: "Royal Palm, Boca Raton", img: "/images/gallery/gallery-calacatta-kitchen.jpg" },
+  { title: "Taj Mahal Waterfall Island", category: "Kitchen", material: "Quartzite", location: "Boca West", img: "/images/gallery/gallery-taj-mahal-island.jpg" },
+  { title: "Carrara Master Bathroom", category: "Bathroom", material: "Marble", location: "The Sanctuary, Boca Raton", img: "/images/gallery/gallery-carrara-bathroom.jpg" },
+  { title: "Absolute Black Outdoor Kitchen", category: "Outdoor", material: "Granite", location: "Highland Beach", img: "/images/gallery/gallery-black-outdoor.jpg" },
+  { title: "Silestone Modern Kitchen", category: "Kitchen", material: "Quartz", location: "Mizner Park, Boca Raton", img: "/images/gallery/gallery-silestone-kitchen.jpg" },
+  { title: "Statuario Book-Match Wall", category: "Feature Wall", material: "Marble", location: "Delray Beach", img: "/images/gallery/gallery-statuario-wall.jpg" },
+  { title: "Super White Kitchen & Island", category: "Kitchen", material: "Quartzite", location: "Parkland", img: "/images/gallery/gallery-superwhite-kitchen.jpg" },
+  { title: "Blue Bahia Statement Bar", category: "Commercial", material: "Granite", location: "Fort Lauderdale", img: "/images/gallery/gallery-bluebahia-bar.jpg" },
+  { title: "Calacatta Quartz Bathroom", category: "Bathroom", material: "Quartz", location: "Coral Springs", img: "/images/gallery/gallery-calacatta-quartz-bath.jpg" },
+  { title: "Cristallo Quartzite Kitchen", category: "Kitchen", material: "Quartzite", location: "West Palm Beach", img: "/images/gallery/gallery-cristallo-kitchen.jpg" },
+  { title: "Carrara Shower Surround", category: "Bathroom", material: "Marble", location: "Boca Raton", img: "/images/gallery/gallery-carrara-shower.jpg" },
+  { title: "Fantasy Brown Kitchen", category: "Kitchen", material: "Granite", location: "Wellington", img: "/images/gallery/gallery-fantasybrown-kitchen.jpg" },
 ];
 
 export default function GalleryPage() {
@@ -64,9 +65,16 @@ export default function GalleryPage() {
             {GALLERY_ITEMS.map((item) => (
               <div
                 key={item.title}
-                className="group relative aspect-[4/3] bg-marble rounded-sm overflow-hidden border border-marble-dark/30 marble-gradient"
+                className="group relative aspect-[4/3] rounded-sm overflow-hidden border border-marble-dark/30 cursor-pointer"
               >
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <Image
+                  src={item.img}
+                  alt={`${item.title} — ${item.material} ${item.category} in ${item.location} by Boca Marble`}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
                   <h3 className="font-heading text-lg font-bold text-white mb-1">
                     {item.title}
@@ -76,7 +84,7 @@ export default function GalleryPage() {
                   </p>
                 </div>
                 <div className="absolute top-4 right-4">
-                  <span className="bg-white/90 text-charcoal text-xs font-semibold px-3 py-1 rounded-sm">
+                  <span className="bg-white/90 backdrop-blur-sm text-charcoal text-xs font-semibold px-3 py-1 rounded-sm shadow-sm">
                     {item.material}
                   </span>
                 </div>
