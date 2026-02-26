@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { SITE, CTA } from "@/lib/constants";
 import { SERVICES } from "@/lib/services-data";
@@ -94,9 +95,17 @@ export default function HomePage() {
       <FAQSchema faqs={HOME_FAQS} />
 
       {/* HERO */}
-      <section className="relative min-h-[90vh] flex items-center marble-gradient overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-charcoal/80 via-charcoal/50 to-transparent z-10" />
-        <div className="absolute inset-0 bg-[url('/marble-texture.jpg')] bg-cover bg-center opacity-30" />
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+        <Image
+          src="/images/hero-bg.jpg"
+          alt="Luxury marble countertop kitchen in Boca Raton with ocean view"
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
+          quality={90}
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-charcoal/85 via-charcoal/60 to-charcoal/20 z-10" />
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="max-w-3xl">
             <p className="text-gold font-semibold text-sm uppercase tracking-[0.25em] mb-4">
@@ -355,20 +364,27 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {[
-              { name: "Calacatta Gold", origin: "Italy", type: "Marble" },
-              { name: "Carrara White", origin: "Italy", type: "Marble" },
-              { name: "Statuario", origin: "Italy", type: "Marble" },
-              { name: "Taj Mahal", origin: "Brazil", type: "Quartzite" },
-              { name: "Super White", origin: "Brazil", type: "Quartzite" },
-              { name: "Absolute Black", origin: "India", type: "Granite" },
-              { name: "Blue Bahia", origin: "Brazil", type: "Granite" },
-              { name: "Silestone Calacatta", origin: "Spain", type: "Quartz" },
+              { name: "Calacatta Gold", origin: "Italy", type: "Marble", img: "/images/stones/stone-calacatta-gold.jpg" },
+              { name: "Carrara White", origin: "Italy", type: "Marble", img: "/images/stones/stone-carrara-white.jpg" },
+              { name: "Statuario", origin: "Italy", type: "Marble", img: "/images/stones/stone-statuario.jpg" },
+              { name: "Taj Mahal", origin: "Brazil", type: "Quartzite", img: "/images/stones/stone-taj-mahal.jpg" },
+              { name: "Super White", origin: "Brazil", type: "Quartzite", img: "/images/stones/stone-super-white.jpg" },
+              { name: "Absolute Black", origin: "India", type: "Granite", img: "/images/stones/stone-absolute-black.jpg" },
+              { name: "Blue Bahia", origin: "Brazil", type: "Granite", img: "/images/stones/stone-blue-bahia.jpg" },
+              { name: "Silestone Calacatta", origin: "Spain", type: "Quartz", img: "/images/stones/stone-silestone-calacatta.jpg" },
             ].map((mat) => (
               <div
                 key={mat.name}
-                className="group relative aspect-square bg-charcoal-light rounded-sm overflow-hidden border border-white/5 hover:border-gold/30 transition-all marble-gradient"
+                className="group relative aspect-square rounded-sm overflow-hidden border border-white/5 hover:border-gold/30 hover:scale-[1.03] transition-all duration-300"
               >
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-transparent to-transparent" />
+                <Image
+                  src={mat.img}
+                  alt={`${mat.name} ${mat.type} countertop surface`}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/10 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-4">
                   <p className="text-white font-heading font-bold text-sm">
                     {mat.name}
