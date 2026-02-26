@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { SITE, CTA } from "@/lib/constants";
 import { getAreaBySlug, getAllAreaSlugs } from "@/lib/areas-data";
 import { SERVICES } from "@/lib/services-data";
-import { BreadcrumbSchema } from "@/components/SchemaMarkup";
+import { BreadcrumbSchema, AreaBusinessSchema, FAQSchema } from "@/components/SchemaMarkup";
 
 export async function generateStaticParams() {
   return getAllAreaSlugs().map((slug) => ({ slug }));
@@ -22,11 +22,28 @@ export async function generateMetadata({
     title: area.metaTitle,
     description: area.metaDescription,
     alternates: { canonical: `${SITE.url}/areas/${slug}` },
+    keywords: [
+      `marble countertops ${area.name.toLowerCase()}`,
+      `countertop installation ${area.name.toLowerCase()}`,
+      `granite countertops ${area.name.toLowerCase()}`,
+      `quartz countertops ${area.name.toLowerCase()}`,
+      `countertop fabrication ${area.name.toLowerCase()}`,
+      `kitchen countertops ${area.name.toLowerCase()}`,
+    ],
+    robots: { index: true, follow: true, "max-image-preview": "large" as const, "max-snippet": -1 as const },
     openGraph: {
       title: area.metaTitle,
       description: area.metaDescription,
       url: `${SITE.url}/areas/${slug}`,
       type: "website",
+      siteName: SITE.name,
+      images: [{ url: "/images/hero-bg.jpg", width: 1200, height: 630, alt: `Countertop Installation ${area.name} - Boca Marble` }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: area.metaTitle,
+      description: area.metaDescription,
+      images: ["/images/hero-bg.jpg"],
     },
   };
 }
@@ -47,6 +64,23 @@ export default async function AreaPage({
           { name: "Home", href: "/" },
           { name: "Service Areas", href: "/areas" },
           { name: area.name, href: `/areas/${slug}` },
+        ]}
+      />
+      <AreaBusinessSchema areaName={area.name} areaSlug={slug} />
+      <FAQSchema
+        faqs={[
+          {
+            question: `How much do countertops cost in ${area.name}?`,
+            answer: `Countertop prices in ${area.name} range from $50-$250+ per square foot installed. Granite starts at ~$50/sqft, quartz ~$55/sqft, marble ~$75/sqft, and exotic quartzite $100+/sqft. Call ${SITE.phone} for a free estimate.`,
+          },
+          {
+            question: `Do you offer free countertop estimates in ${area.name}?`,
+            answer: `Yes! Boca Marble offers completely free, no-obligation in-home estimates throughout ${area.name}. We bring slab samples to your home. Call ${SITE.phone} or WhatsApp us to schedule.`,
+          },
+          {
+            question: `What countertop materials do you install in ${area.name}?`,
+            answer: `We install marble, granite, quartz, quartzite, porcelain (Dekton/Neolith), and engineered stone countertops in ${area.name}. Visit our showroom to see 1,000+ slab options.`,
+          },
         ]}
       />
 

@@ -6,9 +6,16 @@ import { BreadcrumbSchema } from "@/components/SchemaMarkup";
 
 export const metadata: Metadata = {
   title: "Countertop Services | Marble, Granite, Quartz Fabrication & Installation",
-  description:
-    "Full-service countertop fabrication and installation in Boca Raton. Marble, granite, quartz, quartzite countertops for kitchens, bathrooms & commercial. Free estimates.",
+  description: `Full-service countertop fabrication and installation in Boca Raton. Marble, granite, quartz, quartzite for kitchens, bathrooms & commercial. Free estimates — ${SITE.phone}.`,
   alternates: { canonical: `${SITE.url}/services` },
+  keywords: ["countertop services boca raton", "marble fabrication", "granite installation", "quartz countertop company", "countertop fabricator south florida"],
+  openGraph: {
+    title: "Countertop Services | Boca Marble",
+    description: "Premium countertop fabrication & installation. Marble, granite, quartz, quartzite. Boca Raton & South Florida.",
+    url: `${SITE.url}/services`,
+    images: [{ url: "/images/hero-bg.jpg", width: 1200, height: 630, alt: "Boca Marble Services" }],
+  },
+  twitter: { card: "summary_large_image", title: "Countertop Services | Boca Marble", images: ["/images/hero-bg.jpg"] },
 };
 
 export default function ServicesPage() {

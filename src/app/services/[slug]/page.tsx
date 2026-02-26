@@ -25,11 +25,27 @@ export async function generateMetadata({
     title: service.metaTitle,
     description: service.metaDescription,
     alternates: { canonical: `${SITE.url}/services/${slug}` },
+    keywords: [
+      `${service.title.toLowerCase()} boca raton`,
+      `${service.title.toLowerCase()} south florida`,
+      `${service.title.toLowerCase()} installation`,
+      `${service.title.toLowerCase()} fabrication`,
+      `best ${service.title.toLowerCase()} near me`,
+    ],
+    robots: { index: true, follow: true, "max-image-preview": "large" as const, "max-snippet": -1 as const },
     openGraph: {
       title: service.metaTitle,
       description: service.metaDescription,
       url: `${SITE.url}/services/${slug}`,
       type: "website",
+      siteName: SITE.name,
+      images: [{ url: "/images/hero-bg.jpg", width: 1200, height: 630, alt: `${service.title} - Boca Marble` }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: service.metaTitle,
+      description: service.metaDescription,
+      images: ["/images/hero-bg.jpg"],
     },
   };
 }

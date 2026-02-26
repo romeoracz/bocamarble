@@ -19,7 +19,7 @@ export const AREAS: AreaPage[] = [
     metaTitle:
       "Marble & Stone Countertops Boca Raton | Fabrication & Install | Boca Marble",
     metaDescription:
-      "Boca Raton's #1 countertop fabricator. Marble, granite, quartz & quartzite countertops. 1,000+ projects completed. Free estimates. Call (561) 555-0123.",
+      "Boca Raton's #1 countertop fabricator. Marble, granite, quartz & quartzite countertops. 1,000+ projects completed. Free estimates. Call (954) 412-9300.",
     h1: "Marble & Stone Countertops in Boca Raton, FL",
     intro: "As Boca Raton's premier countertop fabrication company, we've installed thousands of surfaces across the city's most prestigious neighborhoods. From waterfront estates in Royal Palm Yacht & Country Club to modern condos in Boca West, our team delivers luxury countertops that match the elegance Boca Raton demands.",
     neighborhoods: [
@@ -134,7 +134,7 @@ export const AREAS: AreaPage[] = [
     metaTitle:
       "Countertop Installation Parkland FL | Luxury Stone | Boca Marble",
     metaDescription:
-      "Luxury countertop fabrication for Parkland's finest homes. Premium marble, granite, quartz & quartzite. Free in-home estimates. Call (561) 555-0123.",
+      "Luxury countertop fabrication for Parkland's finest homes. Premium marble, granite, quartz & quartzite. Free in-home estimates. Call (954) 412-9300.",
     h1: "Luxury Countertop Installation in Parkland, FL",
     intro: "Parkland's luxury homes demand premium countertop surfaces. As the area's preferred stone fabricator, we've outfitted kitchens and bathrooms in Heron Bay, MariSol, Watercrest, and throughout Parkland's distinguished communities with the finest marble, granite, and quartzite available.",
     neighborhoods: [

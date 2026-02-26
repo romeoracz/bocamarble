@@ -5,9 +5,16 @@ import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Free Countertop Estimate | Boca Raton",
-  description:
-    "Get a free, no-obligation countertop estimate in Boca Raton. Marble, granite, quartz & quartzite. Same-day response. Call (561) 555-0123 or fill out our form.",
+  description: `Get a free, no-obligation countertop estimate in Boca Raton. Marble, granite, quartz & quartzite. Same-day response. Call ${SITE.phone} or fill out our form.`,
   alternates: { canonical: `${SITE.url}/free-estimate` },
+  keywords: ["free countertop estimate boca raton", "countertop quote boca raton", "free marble estimate", "countertop measurement boca raton"],
+  openGraph: {
+    title: "Free Countertop Estimate | Boca Marble",
+    description: `No-obligation countertop estimates in Boca Raton & South Florida. Same-day response. Call ${SITE.phone}.`,
+    url: `${SITE.url}/free-estimate`,
+    images: [{ url: "/images/hero-bg.jpg", width: 1200, height: 630, alt: "Free Countertop Estimate - Boca Marble" }],
+  },
+  twitter: { card: "summary_large_image", title: "Free Countertop Estimate | Boca Marble", images: ["/images/hero-bg.jpg"] },
 };
 
 export default function FreeEstimatePage() {

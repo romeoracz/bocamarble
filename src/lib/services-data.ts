@@ -19,7 +19,7 @@ export const SERVICES: ServicePage[] = [
     metaTitle:
       "Marble Countertops Boca Raton | Fabrication & Installation | Boca Marble",
     metaDescription:
-      "Premium marble countertop fabrication & installation in Boca Raton. Calacatta, Carrara, Statuario & exotic marbles. Free estimates. Call (561) 555-0123.",
+      "Premium marble countertop fabrication & installation in Boca Raton. Calacatta, Carrara, Statuario & exotic marbles. Free estimates. Call (954) 412-9300.",
     heroSubtitle:
       "Timeless elegance crafted by Boca Raton's leading marble fabricators",
     intro: "Marble countertops represent the pinnacle of luxury in home design. At Boca Marble, we source the world's finest marbles — from the quarries of Carrara to the exotic veins of Calacatta Gold — and fabricate each slab with precision CNC technology and hand-finished edges. Every installation is backed by our lifetime craftsmanship warranty.",
@@ -69,7 +69,7 @@ export const SERVICES: ServicePage[] = [
     metaTitle:
       "Granite Countertops Boca Raton | Fabrication & Installation | Boca Marble",
     metaDescription:
-      "Expert granite countertop fabrication & installation in Boca Raton. 500+ colors, durable & heat-resistant. Free estimates. Call (561) 555-0123.",
+      "Expert granite countertop fabrication & installation in Boca Raton. 500+ colors, durable & heat-resistant. Free estimates. Call (954) 412-9300.",
     heroSubtitle:
       "Durable natural beauty for kitchens and bathrooms across Boca Raton",
     intro: "Granite countertops combine unmatched durability with natural beauty that no two slabs can replicate. Our state-of-the-art fabrication facility in South Florida processes over 500 granite varieties — from classic Absolute Black to exotic Blue Bahia — delivering precision-cut, polished, and perfectly installed surfaces for every project.",
@@ -112,7 +112,7 @@ export const SERVICES: ServicePage[] = [
     metaTitle:
       "Quartz Countertops Boca Raton | Silestone, Caesarstone, Cambria | Boca Marble",
     metaDescription:
-      "Premium quartz countertop installation in Boca Raton. Silestone, Caesarstone, Cambria & more. Non-porous, low maintenance. Free estimates. Call (561) 555-0123.",
+      "Premium quartz countertop installation in Boca Raton. Silestone, Caesarstone, Cambria & more. Non-porous, low maintenance. Free estimates. Call (954) 412-9300.",
     heroSubtitle:
       "Low-maintenance luxury with endless design possibilities",
     intro: "Quartz countertops offer the beauty of natural stone with engineered durability and zero maintenance. As authorized fabricators for Silestone, Caesarstone, and Cambria, we deliver flawless quartz installations throughout Boca Raton. Non-porous surfaces mean no sealing, no staining, and no bacteria — perfect for busy South Florida kitchens.",
@@ -267,7 +267,7 @@ export const SERVICES: ServicePage[] = [
     metaTitle:
       "Outdoor Kitchen Countertops Boca Raton | Weather-Resistant Stone | Boca Marble",
     metaDescription:
-      "Outdoor kitchen countertops built for Boca Raton's climate. Granite, quartzite & porcelain. UV & weather resistant. Free estimates. Call (561) 555-0123.",
+      "Outdoor kitchen countertops built for Boca Raton's climate. Granite, quartzite & porcelain. UV & weather resistant. Free estimates. Call (954) 412-9300.",
     heroSubtitle:
       "Weather-resistant stone surfaces for South Florida outdoor living",
     intro: "Boca Raton's outdoor lifestyle demands countertops that withstand Florida's sun, rain, and humidity. We specialize in outdoor kitchen countertops using UV-resistant granite, quartzite, and porcelain surfaces that maintain their beauty through every season. From pool-side bars to summer kitchens, we build outdoor surfaces that last.",

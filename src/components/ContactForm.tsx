@@ -76,7 +76,7 @@ export default function ContactForm() {
             name="phone"
             required
             className="w-full px-4 py-3 border border-marble-dark/40 rounded-sm focus:outline-none focus:border-gold transition-colors text-sm"
-            placeholder="(561) 555-0123"
+            placeholder="(954) 412-9300"
           />
         </div>
 

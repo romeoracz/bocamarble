@@ -30,18 +30,29 @@ export const metadata: Metadata = {
   keywords: [
     "marble countertops boca raton",
     "countertop fabrication boca raton",
+    "countertop installation boca raton",
     "granite countertops boca raton",
     "quartz countertops boca raton",
-    "countertop installation boca raton",
     "quartzite countertops boca raton",
     "kitchen countertops boca raton",
     "bathroom countertops boca raton",
     "marble fabrication south florida",
     "stone countertops palm beach county",
+    "countertop company boca raton",
+    "marble installer boca raton",
+    "custom countertops boca raton",
+    "luxury countertops boca raton",
+    "countertop fabricator near me",
+    "countertop replacement boca raton",
+    "outdoor kitchen countertops boca raton",
+    "commercial countertops boca raton",
+    "marble countertops delray beach",
+    "countertop installation south florida",
   ],
-  authors: [{ name: SITE.name }],
+  authors: [{ name: SITE.name, url: SITE.url }],
   creator: SITE.name,
   publisher: SITE.name,
+  category: "Home Improvement",
   formatDetection: {
     telephone: true,
     email: true,
@@ -57,7 +68,7 @@ export const metadata: Metadata = {
     description: SITE.description,
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/images/hero-bg.jpg",
         width: 1200,
         height: 630,
         alt: "Boca Marble - Premium Countertop Fabrication in Boca Raton",
@@ -68,7 +79,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Boca Marble | Marble & Countertop Fabrication Boca Raton",
     description: SITE.description,
-    images: ["/og-image.jpg"],
+    images: ["/images/hero-bg.jpg"],
   },
   robots: {
     index: true,
@@ -83,13 +94,16 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: SITE.url,
-  },
-  verification: {
-    google: "YOUR_GOOGLE_VERIFICATION_CODE",
-    other: {
-      "msvalidate.01": "YOUR_BING_VERIFICATION_CODE",
-      "apple-mobile-web-app-title": SITE.name,
+    languages: {
+      "en-US": SITE.url,
+      "es-US": `${SITE.url}/es`,
     },
+  },
+  other: {
+    "apple-mobile-web-app-capable": "yes",
+    "apple-mobile-web-app-status-bar-style": "black-translucent",
+    "format-detection": "telephone=yes",
+    "mobile-web-app-capable": "yes",
   },
 };
 
@@ -102,13 +116,37 @@ export default function RootLayout({
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <head>
         <SchemaMarkup />
+
+        {/* Resource Hints */}
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://maps.googleapis.com" />
+        <link rel="dns-prefetch" href="https://wa.me" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+
+        {/* Favicons & PWA */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="theme-color" content="#c9a96e" />
+        <meta name="apple-mobile-web-app-title" content={SITE.name} />
+
+        {/* Geo Tags for Local SEO */}
         <meta name="geo.region" content="US-FL" />
-        <meta name="geo.placename" content="Boca Raton" />
+        <meta name="geo.placename" content="Boca Raton, Florida" />
         <meta name="geo.position" content={`${SITE.geo.lat};${SITE.geo.lng}`} />
         <meta name="ICBM" content={`${SITE.geo.lat}, ${SITE.geo.lng}`} />
+        <meta name="DC.title" content={SITE.name} />
+        <meta name="DC.creator" content={SITE.legalName} />
+        <meta name="DC.subject" content="Marble Countertop Fabrication Installation" />
+        <meta name="DC.description" content={SITE.description} />
+        <meta name="DC.publisher" content={SITE.legalName} />
+        <meta name="DC.language" content="en" />
+        <meta name="DC.coverage" content="Boca Raton, FL, USA" />
+
+        {/* Content Language */}
+        <meta httpEquiv="content-language" content="en-US" />
       </head>
       <body className="antialiased">
         <Header />

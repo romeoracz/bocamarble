@@ -9,9 +9,19 @@ import { FAQSchema, BreadcrumbSchema } from "@/components/SchemaMarkup";
 export const metadata: Metadata = {
   title:
     "Boca Marble | #1 Marble & Countertop Fabrication in Boca Raton, FL",
-  description:
-    "Boca Raton's premier marble, granite, quartz & quartzite countertop fabrication and installation company. Serving South Florida since 2012. Free estimates — call (561) 555-0123.",
+  description: `Boca Raton's premier marble, granite, quartz & quartzite countertop fabrication and installation. 1,500+ projects, 4.9★ rated. Free estimates — call ${SITE.phone}.`,
   alternates: { canonical: SITE.url },
+  openGraph: {
+    title: "Boca Marble | #1 Marble & Countertop Fabrication in Boca Raton",
+    description: `Premium countertop fabrication & installation in Boca Raton. Marble, granite, quartz, quartzite. Free estimates — ${SITE.phone}.`,
+    images: [{ url: "/images/hero-bg.jpg", width: 1200, height: 630, alt: "Boca Marble - Luxury Countertop Fabrication" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Boca Marble | #1 Countertop Fabrication Boca Raton",
+    description: `Premium marble, granite, quartz countertops in Boca Raton. Free estimates — ${SITE.phone}.`,
+    images: ["/images/hero-bg.jpg"],
+  },
 };
 
 const HOME_FAQS = [
@@ -34,7 +44,7 @@ const HOME_FAQS = [
   {
     question: "Do you offer free countertop estimates in Boca Raton?",
     answer:
-      "Yes! We offer completely free, no-obligation in-home estimates throughout Boca Raton and all of South Florida. Call us at (561) 555-0123 or WhatsApp us to schedule your free estimate today.",
+      "Yes! We offer completely free, no-obligation in-home estimates throughout Boca Raton and all of South Florida. Call us at (954) 412-9300 or WhatsApp us to schedule your free estimate today.",
   },
   {
     question: "What areas do you serve besides Boca Raton?",

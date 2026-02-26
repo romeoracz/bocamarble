@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   description:
     "Boca Marble serves all of South Florida with premium countertop fabrication & installation. Boca Raton, Delray Beach, Deerfield Beach, Coral Springs, Parkland & more.",
   alternates: { canonical: `${SITE.url}/areas` },
+  keywords: ["countertop installation south florida", "marble countertops palm beach county", "granite countertops broward county", "countertop company near me"],
+  openGraph: {
+    title: "Service Areas | Boca Marble Countertop Installation",
+    description: "Premium countertop services across Palm Beach & Broward counties. Boca Raton, Delray Beach, Fort Lauderdale & more.",
+    url: `${SITE.url}/areas`,
+    images: [{ url: "/images/hero-bg.jpg", width: 1200, height: 630, alt: "Boca Marble Service Areas" }],
+  },
+  twitter: { card: "summary_large_image", title: "Service Areas | Boca Marble", images: ["/images/hero-bg.jpg"] },
 };
 
 export default function AreasPage() {

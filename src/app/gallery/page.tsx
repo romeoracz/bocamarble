@@ -1,13 +1,21 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { SITE, CTA } from "@/lib/constants";
-import { BreadcrumbSchema } from "@/components/SchemaMarkup";
+import { BreadcrumbSchema, GallerySchema } from "@/components/SchemaMarkup";
 
 export const metadata: Metadata = {
   title: "Gallery | Marble & Countertop Projects in Boca Raton",
   description:
     "Browse our portfolio of marble, granite, quartz, and quartzite countertop installations across Boca Raton and South Florida. Kitchen, bathroom, outdoor & commercial projects.",
   alternates: { canonical: `${SITE.url}/gallery` },
+  keywords: ["countertop gallery boca raton", "marble kitchen photos", "granite countertop portfolio", "countertop before after boca raton"],
+  openGraph: {
+    title: "Project Gallery | Boca Marble Countertop Installations",
+    description: "See our stunning marble, granite & quartz countertop installations across Boca Raton and South Florida.",
+    url: `${SITE.url}/gallery`,
+    images: [{ url: "/images/hero-bg.jpg", width: 1200, height: 630, alt: "Boca Marble Project Gallery" }],
+  },
+  twitter: { card: "summary_large_image", title: "Boca Marble Gallery", images: ["/images/hero-bg.jpg"] },
 };
 
 const GALLERY_ITEMS = [
@@ -34,6 +42,7 @@ export default function GalleryPage() {
           { name: "Gallery", href: "/gallery" },
         ]}
       />
+      <GallerySchema items={GALLERY_ITEMS} />
 
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

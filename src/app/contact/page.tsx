@@ -5,9 +5,16 @@ import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Boca Marble | Boca Raton Countertop Company",
-  description:
-    "Contact Boca Marble for countertop fabrication & installation in Boca Raton. Call (561) 555-0123, WhatsApp us, or visit our showroom. Free estimates available.",
+  description: `Contact Boca Marble for countertop fabrication & installation in Boca Raton. Call ${SITE.phone}, WhatsApp us, or visit our showroom. Free estimates available.`,
   alternates: { canonical: `${SITE.url}/contact` },
+  keywords: ["contact boca marble", "countertop showroom boca raton", "countertop company phone number", "marble showroom south florida"],
+  openGraph: {
+    title: "Contact Boca Marble | Countertop Fabrication Boca Raton",
+    description: `Reach Boca Marble — call ${SITE.phone}, WhatsApp, email or visit our showroom. Free estimates.`,
+    url: `${SITE.url}/contact`,
+    images: [{ url: "/images/hero-bg.jpg", width: 1200, height: 630, alt: "Contact Boca Marble" }],
+  },
+  twitter: { card: "summary_large_image", title: "Contact Boca Marble", images: ["/images/hero-bg.jpg"] },
 };
 
 export default function ContactPage() {

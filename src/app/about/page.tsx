@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   description:
     "Learn about Boca Marble — Boca Raton's trusted marble, granite, quartz & quartzite countertop fabricator since 2012. Licensed, insured, 1,500+ projects completed.",
   alternates: { canonical: `${SITE.url}/about` },
+  keywords: ["about boca marble", "countertop fabricator boca raton", "marble company south florida", "stone fabrication company"],
+  openGraph: {
+    title: "About Boca Marble | Premier Countertop Fabricator Since 2012",
+    description: "Boca Raton's most trusted countertop company. 14+ years, 1,500+ projects, 4.9★ rating. Licensed & insured.",
+    url: `${SITE.url}/about`,
+    images: [{ url: "/images/hero-bg.jpg", width: 1200, height: 630, alt: "About Boca Marble" }],
+  },
+  twitter: { card: "summary_large_image", title: "About Boca Marble", images: ["/images/hero-bg.jpg"] },
 };
 
 export default function AboutPage() {
