@@ -147,6 +147,15 @@ export default function RootLayout({
 
         {/* Content Language */}
         <meta httpEquiv="content-language" content="en-US" />
+
+        {/* LLM Discovery */}
+        <link rel="author" href={`${SITE.url}/about`} />
+        <link rel="help" href={`${SITE.url}/llms.txt`} />
+        <meta name="ai-content-declaration" content="human-created" />
+        <meta name="citation_title" content="Boca Marble - Premium Countertop Fabrication Boca Raton FL" />
+        <meta name="citation_author" content={SITE.legalName} />
+        <meta name="citation_publication_date" content="2026" />
+        <meta name="citation_public_url" content={SITE.url} />
       </head>
       <body className="antialiased">
         <Header />

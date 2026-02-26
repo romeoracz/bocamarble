@@ -130,7 +130,10 @@ export default function Footer() {
               © {new Date().getFullYear()} {SITE.legalName}. All rights reserved.
               Licensed & Insured. FL License #CBC1234567.
             </p>
-            <div className="flex gap-4 text-xs text-white/50">
+            <div className="flex flex-wrap gap-4 text-xs text-white/50">
+              <Link href="/boca-raton-countertops" className="hover:text-white/80 transition-colors">
+                Countertop Guide
+              </Link>
               <Link href="/privacy" className="hover:text-white/80 transition-colors">
                 Privacy Policy
               </Link>

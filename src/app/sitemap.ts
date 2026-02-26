@@ -49,6 +49,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    {
+      url: `${SITE.url}/boca-raton-countertops`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
   ];
 
   const servicePages: MetadataRoute.Sitemap = getAllServiceSlugs().map(

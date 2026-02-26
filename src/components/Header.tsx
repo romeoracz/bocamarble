@@ -6,6 +6,7 @@ import { SITE, CTA } from "@/lib/constants";
 
 const NAV_LINKS = [
   { href: "/services", label: "Services" },
+  { href: "/boca-raton-countertops", label: "Countertop Guide" },
   { href: "/gallery", label: "Gallery" },
   { href: "/areas", label: "Service Areas" },
   { href: "/about", label: "About" },
