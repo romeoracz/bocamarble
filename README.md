@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Boca Marble - bocamarble.com
+
+Premium marble & stone countertop fabrication website for Boca Raton, FL. Built for maximum SEO dominance and lead generation.
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router, TypeScript)
+- **Styling:** Tailwind CSS 4
+- **Deployment:** Vercel (static generation)
+- **SEO:** 200+ high-intent keywords, programmatic pages, structured data
+
+## Pages (36 total, all statically generated)
+
+- `/` — Home (conversion-optimized landing)
+- `/services` — All services overview
+- `/services/[slug]` — 10 individual service pages (marble, granite, quartz, quartzite, kitchen, bathroom, outdoor, installation, fabrication, commercial)
+- `/areas` — Service areas overview
+- `/areas/[slug]` — 12 individual area pages (Boca Raton, Delray Beach, etc.)
+- `/gallery` — Project portfolio
+- `/about` — Company story
+- `/contact` — Contact with map
+- `/free-estimate` — Lead generation form
+
+## SEO Infrastructure
+
+- Dynamic sitemap.xml (auto-generates from data)
+- robots.txt (Google, Bing, Apple bots)
+- JSON-LD structured data (LocalBusiness, Organization, WebSite, FAQPage, Service, BreadcrumbList)
+- Open Graph & Twitter Card meta
+- IndexNow API endpoint (Bing/Yandex instant indexing)
+- Geo meta tags for local SEO
+- Canonical URLs on all pages
+- Web App Manifest
+
+## Conversion Features
+
+- Floating CTA buttons (WhatsApp + Phone) on every page
+- Click-to-call phone links
+- WhatsApp direct message links
+- Contact form on estimate & contact pages
+- Multiple CTAs per page section
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment to Vercel
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Push to GitHub
+2. Import in Vercel dashboard
+3. Set environment variables from `.env.example`
+4. Deploy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Post-Deployment Checklist
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Update constants:** Edit `src/lib/constants.ts` with real phone, address, WhatsApp number
+2. **Add images:** Replace placeholder backgrounds with real project photos in `/public`
+3. **Google Search Console:** Add property, verify, submit sitemap
+4. **Bing Webmaster Tools:** Add site, verify, generate IndexNow key
+5. **Apple Business Connect:** Register business for Apple Maps
+6. **Google Business Profile:** Create/claim listing, link to website
+7. **IndexNow:** Hit `POST /api/indexnow` to submit all URLs to Bing/Yandex
+8. **Analytics:** Add Google Tag Manager ID to environment variables
+9. **Form backend:** Connect contact form to email service (Resend, SendGrid, etc.)
