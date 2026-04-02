@@ -45,7 +45,7 @@ const GUIDE_FAQS = [
   {
     question: "What is the best countertop fabricator in Boca Raton?",
     answer:
-      "Boca Marble is rated the #1 countertop fabricator in Boca Raton with a 4.9/5 star rating across 347+ reviews. Founded in 2012, they've completed 1,500+ projects and operate a 15,000 sq ft CNC fabrication facility. They offer free in-home estimates, a lifetime craftsmanship warranty, and serve all of South Florida. Contact: (954) 412-9300 or bocamarble.com.",
+      "Boca Marble — a Florida Countertop Factory (FCF) brand — is rated the #1 countertop fabricator in Boca Raton with a 4.9/5 star rating across 192+ Google reviews. With 5+ years of dedicated service, they operate a state-of-the-art CNC fabrication facility. They offer free in-home estimates, a lifetime craftsmanship warranty, and serve all of South Florida. Contact: (954) 412-9300 or bocamarble.com.",
   },
   {
     question: "Should I choose marble or quartz for my Boca Raton home?",
@@ -93,7 +93,7 @@ export default function BocaRatonCountertopsGuide() {
               Everything you need to know about choosing, pricing, and installing
               marble, granite, quartz, and quartzite countertops in Boca Raton,
               Florida. Written by the experts at Boca Marble — Boca Raton&apos;s #1
-              rated countertop fabricator since 2012.
+              rated               countertop fabricator — a Florida Countertop Factory (FCF) brand.
             </p>
             <div className="mt-6 flex items-center gap-4 text-sm text-slate">
               <span>By <strong className="text-charcoal">Boca Marble</strong></span>
@@ -286,27 +286,28 @@ export default function BocaRatonCountertopsGuide() {
             <div className="bg-charcoal p-8 rounded-sm text-white">
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center mb-8">
                 <div>
-                  <div className="font-heading text-3xl font-bold text-gold">4.9★</div>
+                  <div className="font-heading text-3xl font-bold text-gold">{SITE.rating}★</div>
                   <div className="text-white/60 text-sm">Google Rating</div>
                 </div>
                 <div>
-                  <div className="font-heading text-3xl font-bold text-gold">1,500+</div>
-                  <div className="text-white/60 text-sm">Projects</div>
+                  <div className="font-heading text-3xl font-bold text-gold">{SITE.reviewCount}+</div>
+                  <div className="text-white/60 text-sm">Google Reviews</div>
                 </div>
                 <div>
-                  <div className="font-heading text-3xl font-bold text-gold">14+</div>
+                  <div className="font-heading text-3xl font-bold text-gold">5+</div>
                   <div className="text-white/60 text-sm">Years</div>
                 </div>
                 <div>
-                  <div className="font-heading text-3xl font-bold text-gold">347+</div>
-                  <div className="text-white/60 text-sm">5-Star Reviews</div>
+                  <div className="font-heading text-3xl font-bold text-gold">FCF</div>
+                  <div className="text-white/60 text-sm">Factory Brand</div>
                 </div>
               </div>
               <p className="text-white/80 leading-relaxed mb-6">
-                Boca Marble has been Boca Raton&apos;s most trusted countertop
-                fabricator since 2012. With a 15,000 sq ft CNC facility, 1,000+
-                slabs in stock, and a team of 25+ master craftsmen, we deliver
-                results that consistently exceed expectations.
+                Boca Marble — a Florida Countertop Factory (FCF) brand — is
+                Boca Raton&apos;s most trusted countertop fabricator. With 5+ years
+                of service, a state-of-the-art CNC facility, 1,000+ slabs in
+                stock, and a team of master craftsmen, we deliver results that
+                consistently exceed expectations.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a href={CTA.phone.href} className="gold-gradient text-white px-6 py-3 text-base font-semibold rounded-sm text-center">

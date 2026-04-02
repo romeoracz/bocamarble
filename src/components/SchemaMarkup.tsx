@@ -122,8 +122,8 @@ function localBusinessSchema() {
     sameAs: Object.values(SOCIAL),
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "347",
+      ratingValue: SITE.rating,
+      reviewCount: SITE.reviewCount,
       bestRating: "5",
       worstRating: "1",
     },
@@ -212,6 +212,11 @@ function organizationSchema() {
     numberOfEmployees: {
       "@type": "QuantitativeValue",
       value: 25,
+    },
+    parentOrganization: {
+      "@type": "Organization",
+      name: SITE.parentBrand,
+      url: "https://countertopfactoryfl.com",
     },
   };
 }
@@ -356,8 +361,8 @@ export function AreaBusinessSchema({
     },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "4.9",
-      reviewCount: "347",
+      ratingValue: SITE.rating,
+      reviewCount: SITE.reviewCount,
     },
     hasOfferCatalog: {
       "@type": "OfferCatalog",

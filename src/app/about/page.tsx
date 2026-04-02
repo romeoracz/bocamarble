@@ -6,12 +6,12 @@ import { BreadcrumbSchema } from "@/components/SchemaMarkup";
 export const metadata: Metadata = {
   title: "About Boca Marble | Boca Raton's Premier Countertop Fabricator",
   description:
-    "Learn about Boca Marble — Boca Raton's trusted marble, granite, quartz & quartzite countertop fabricator since 2012. Licensed, insured, 1,500+ projects completed.",
+    "Learn about Boca Marble — a Florida Countertop Factory (FCF) brand. Boca Raton's trusted marble, granite, quartz & quartzite countertop fabricator. Licensed, insured, 192+ Google reviews.",
   alternates: { canonical: `${SITE.url}/about` },
   keywords: ["about boca marble", "countertop fabricator boca raton", "marble company south florida", "stone fabrication company"],
   openGraph: {
-    title: "About Boca Marble | Premier Countertop Fabricator Since 2012",
-    description: "Boca Raton's most trusted countertop company. 14+ years, 1,500+ projects, 4.9★ rating. Licensed & insured.",
+    title: "About Boca Marble | A Florida Countertop Factory Brand",
+    description: "Boca Raton's most trusted countertop company. A Florida Countertop Factory (FCF) brand. 5+ years, 192+ Google reviews, 4.9★ rating. Licensed & insured.",
     url: `${SITE.url}/about`,
     images: [{ url: "/images/hero-bg.jpg", width: 1200, height: 630, alt: "About Boca Marble" }],
   },
@@ -36,21 +36,25 @@ export default function AboutPage() {
                 About Us
               </p>
               <h1 className="font-heading text-4xl lg:text-5xl font-bold text-charcoal mb-6">
-                Boca Raton&apos;s Most Trusted Countertop Fabricator Since 2012
+                Boca Raton&apos;s Most Trusted Countertop Fabricator
               </h1>
+              <p className="text-gold font-semibold text-sm uppercase tracking-[0.2em] mb-4">
+                A Florida Countertop Factory (FCF) Brand
+              </p>
               <div className="space-y-4 text-slate text-lg leading-relaxed">
                 <p>
-                  Boca Marble was founded with a simple mission: to bring
-                  world-class stone fabrication to South Florida. What started as
-                  a small operation has grown into a 15,000 sq ft state-of-the-art
-                  fabrication facility with a team of 25+ skilled craftsmen.
+                  Boca Marble is a proud brand of Florida Countertop Factory (FCF),
+                  bringing world-class stone fabrication to South Florida. With 5+ years
+                  of dedicated service and a state-of-the-art fabrication facility with
+                  a team of 25+ skilled craftsmen, we&apos;ve built a reputation for
+                  excellence across the region.
                 </p>
                 <p>
-                  We&apos;ve completed over 1,500 projects across Boca Raton and South
-                  Florida — from intimate bathroom vanities to expansive estate
-                  kitchens and large-scale commercial installations. Every project
-                  receives the same attention to detail and commitment to
-                  excellence.
+                  Backed by {SITE.reviewCount}+ Google reviews and a {SITE.rating}★ rating,
+                  we serve Boca Raton and all of South Florida — from intimate bathroom
+                  vanities to expansive estate kitchens and large-scale commercial
+                  installations. Every project receives the same attention to detail
+                  and commitment to excellence.
                 </p>
                 <p>
                   Our investment in technology — including 5-axis CNC bridge saws,
@@ -83,10 +87,10 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
             {[
-              { value: "14+", label: "Years Experience" },
-              { value: "1,500+", label: "Projects Completed" },
-              { value: "25+", label: "Skilled Craftsmen" },
-              { value: "15,000", label: "Sq Ft Facility" },
+              { value: "5+", label: "Years in Business" },
+              { value: "192+", label: "Google Reviews" },
+              { value: "4.9★", label: "Google Rating" },
+              { value: "FCF", label: "Countertop Factory Brand" },
             ].map((stat) => (
               <div key={stat.label}>
                 <div className="font-heading text-4xl lg:text-5xl font-bold text-gold">

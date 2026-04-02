@@ -17,6 +17,9 @@ export default function Footer() {
                 Boca Marble
               </span>
             </div>
+            <p className="text-gold text-xs font-semibold uppercase tracking-[0.15em] mb-2">
+              A Florida Countertop Factory (FCF) Brand
+            </p>
             <p className="text-sm leading-relaxed mb-4">{SITE.description}</p>
             <div className="flex gap-3">
               {Object.entries(SOCIAL).map(([name, url]) => (

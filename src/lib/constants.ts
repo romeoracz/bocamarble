@@ -1,6 +1,7 @@
 export const SITE = {
   name: "Boca Marble",
   legalName: "Boca Marble & Stone LLC",
+  parentBrand: "Florida Countertop Factory (FCF)",
   url: "https://bocamarble.com",
   phone: "(954) 412-9300",
   phoneClean: "+19544129300",
@@ -18,10 +19,13 @@ export const SITE = {
     lng: -80.1181,
   },
   hours: "Mon-Fri 8AM-6PM, Sat 9AM-3PM",
-  yearFounded: 2012,
+  yearFounded: 2020,
   tagline: "Premium Marble & Stone Fabrication in Boca Raton",
   description:
-    "Boca Raton's premier marble, granite, quartz & quartzite countertop fabrication and installation. Serving South Florida with luxury stone surfaces since 2012. Free estimates.",
+    "Boca Raton's premier marble, granite, quartz & quartzite countertop fabrication and installation. A Florida Countertop Factory brand serving South Florida. Free estimates.",
+  reviewCount: "192",
+  rating: "4.9",
+  gtmId: "AW-10930011230",
 } as const;
 
 export const SOCIAL = {

@@ -9,7 +9,7 @@ import { FAQSchema, BreadcrumbSchema } from "@/components/SchemaMarkup";
 export const metadata: Metadata = {
   title:
     "Boca Marble | #1 Marble & Countertop Fabrication in Boca Raton, FL",
-  description: `Boca Raton's premier marble, granite, quartz & quartzite countertop fabrication and installation. 1,500+ projects, 4.9★ rated. Free estimates — call ${SITE.phone}.`,
+  description: `Boca Raton's premier marble, granite, quartz & quartzite countertop fabrication and installation. A Florida Countertop Factory brand. ${SITE.reviewCount}+ reviews, ${SITE.rating}★ rated. Free estimates — call ${SITE.phone}.`,
   alternates: { canonical: SITE.url },
   openGraph: {
     title: "Boca Marble | #1 Marble & Countertop Fabrication in Boca Raton",
@@ -59,10 +59,10 @@ const HOME_FAQS = [
 ];
 
 const TRUST_STATS = [
-  { value: "1,500+", label: "Projects Completed" },
-  { value: "14+", label: "Years in Business" },
+  { value: "5+", label: "Years in Business" },
   { value: "4.9★", label: "Google Rating" },
-  { value: "347+", label: "5-Star Reviews" },
+  { value: "192+", label: "Google Reviews" },
+  { value: "FCF", label: "Countertop Factory Brand" },
 ];
 
 const PROCESS_STEPS = [
@@ -119,7 +119,7 @@ export default function HomePage() {
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="max-w-3xl">
             <p className="text-gold font-semibold text-sm uppercase tracking-[0.25em] mb-4">
-              Boca Raton&apos;s Premier Stone Fabricator
+              A Florida Countertop Factory (FCF) Brand
             </p>
             <h1 className="font-heading text-4xl sm:text-5xl lg:text-7xl font-bold text-white leading-[1.1] mb-6">
               Luxury Marble &{" "}
@@ -238,9 +238,9 @@ export default function HomePage() {
               Boca Raton&apos;s Most Trusted Countertop Company
             </h2>
             <p className="text-slate text-lg leading-relaxed">
-              With over 14 years of experience and 1,500+ completed projects,
-              we&apos;ve earned Boca Raton&apos;s trust through quality, reliability, and
-              unmatched craftsmanship.
+              As a proud Florida Countertop Factory (FCF) brand with 5+ years of
+              dedicated service and 192+ Google reviews, we&apos;ve earned Boca Raton&apos;s
+              trust through quality, reliability, and unmatched craftsmanship.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -484,7 +484,7 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="text-gold font-semibold text-sm hover:text-gold-dark transition-colors inline-flex items-center gap-1"
             >
-              Read All 347+ Reviews on Google
+              Read All 192+ Reviews on Google
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
               </svg>

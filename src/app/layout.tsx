@@ -115,6 +115,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <head>
+        {/* Google Ads Tag */}
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${SITE.gtmId}`} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${SITE.gtmId}');`,
+          }}
+        />
+
         <SchemaMarkup />
 
         {/* Resource Hints */}
@@ -139,7 +147,7 @@ export default function RootLayout({
         <meta name="ICBM" content={`${SITE.geo.lat}, ${SITE.geo.lng}`} />
         <meta name="DC.title" content={SITE.name} />
         <meta name="DC.creator" content={SITE.legalName} />
-        <meta name="DC.subject" content="Marble Countertop Fabrication Installation" />
+        <meta name="DC.subject" content="Marble Countertop Fabrication Installation — Florida Countertop Factory Brand" />
         <meta name="DC.description" content={SITE.description} />
         <meta name="DC.publisher" content={SITE.legalName} />
         <meta name="DC.language" content="en" />
