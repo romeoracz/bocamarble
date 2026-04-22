@@ -79,7 +79,7 @@ export default async function AreaPage({
           },
           {
             question: `What countertop materials do you install in ${area.name}?`,
-            answer: `We install marble, granite, quartz, quartzite, porcelain (Dekton/Neolith), and engineered stone countertops in ${area.name}. Visit our showroom to see 1,000+ slab options.`,
+            answer: `We install marble, granite, quartz, quartzite, porcelain (Dekton/Neolith), and engineered stone countertops in ${area.name}. Visit our Pompano Beach showroom to see 1,000+ slab options.`,
           },
         ]}
       />
@@ -199,7 +199,7 @@ export default async function AreaPage({
                   </h3>
                   <p className="text-white/60 text-sm mb-2">
                     {area.distanceFromHQ !== "Local"
-                      ? `Only ${area.distanceFromHQ} from our facility`
+                      ? `Only ${area.distanceFromHQ} from our showroom`
                       : "Located in our home city"}
                   </p>
                   <p className="text-white/60 text-sm mb-6">

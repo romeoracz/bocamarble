@@ -38,9 +38,9 @@ export default function AreasPage() {
               Countertop Installation Across South Florida
             </h1>
             <p className="text-slate text-lg leading-relaxed">
-              Headquartered in Boca Raton, we deliver premium marble, granite,
-              quartz, and quartzite countertop services throughout Palm Beach and
-              Broward counties.
+              Our showroom & fabrication facility is in Pompano Beach; we specialize
+              in Boca Raton & deliver premium marble, granite, quartz, and quartzite
+              countertop services throughout Palm Beach and Broward counties.
             </p>
           </div>
 
@@ -57,7 +57,7 @@ export default function AreasPage() {
                 <p className="text-gold text-sm font-medium mb-3">
                   {area.county} County
                   {area.distanceFromHQ !== "Local" &&
-                    ` · ${area.distanceFromHQ} from HQ`}
+                    ` · ${area.distanceFromHQ} from showroom`}
                 </p>
                 <p className="text-slate text-sm leading-relaxed mb-4 line-clamp-3">
                   {area.intro}

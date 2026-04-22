@@ -55,6 +55,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.95,
     },
+    {
+      url: `${SITE.url}/privacy`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.35,
+    },
+    {
+      url: `${SITE.url}/terms`,
+      lastModified: now,
+      changeFrequency: "yearly",
+      priority: 0.35,
+    },
   ];
 
   const servicePages: MetadataRoute.Sitemap = getAllServiceSlugs().map(

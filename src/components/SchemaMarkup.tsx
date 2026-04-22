@@ -1,4 +1,4 @@
-import { SITE, SOCIAL } from "@/lib/constants";
+import { SITE, SOCIAL, NAP } from "@/lib/constants";
 import { AREAS } from "@/lib/areas-data";
 import { SERVICES } from "@/lib/services-data";
 
@@ -82,7 +82,7 @@ function localBusinessSchema() {
       latitude: SITE.geo.lat,
       longitude: SITE.geo.lng,
     },
-    hasMap: `https://maps.google.com/?q=${SITE.geo.lat},${SITE.geo.lng}`,
+    hasMap: NAP.mapsSearchUrl,
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
@@ -156,14 +156,6 @@ function websiteSchema() {
       "@id": `${SITE.url}/#business`,
     },
     inLanguage: "en-US",
-    potentialAction: {
-      "@type": "SearchAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${SITE.url}/search?q={search_term_string}`,
-      },
-      "query-input": "required name=search_term_string",
-    },
   };
 }
 

@@ -131,7 +131,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-white/50">
               © {new Date().getFullYear()} {SITE.legalName}. All rights reserved.
-              Licensed & Insured. FL License #CBC1234567.
+              Licensed & insured Florida contractor. Verify license numbers with DBPR before hiring any contractor.
             </p>
             <div className="flex flex-wrap gap-4 text-xs text-white/50">
               <Link href="/boca-raton-countertops" className="hover:text-white/80 transition-colors">

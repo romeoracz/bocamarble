@@ -39,7 +39,7 @@ export default function ContactPage() {
               </h1>
               <p className="text-slate text-lg leading-relaxed mb-8">
                 We&apos;d love to hear about your project. Reach out by phone,
-                WhatsApp, email, or visit our Boca Raton showroom.
+                WhatsApp, email, or visit our showroom in Pompano Beach.
               </p>
 
               <div className="space-y-6 mb-8">
@@ -145,7 +145,7 @@ export default function ContactPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Boca Marble location in Boca Raton, FL"
+                  title="Boca Marble showroom — Pompano Beach, FL"
                 />
               </div>
             </div>

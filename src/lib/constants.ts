@@ -22,10 +22,23 @@ export const SITE = {
   yearFounded: 2020,
   tagline: "Premium Marble & Stone Fabrication in Boca Raton",
   description:
-    "Boca Raton's premier marble, granite, quartz & quartzite countertop fabrication and installation. A Florida Countertop Factory brand serving South Florida. Free estimates.",
+    "Boca Raton's premier marble, granite, quartz & quartzite countertop fabrication and installation. Florida Countertop Factory brand. Showroom & fabrication in Pompano Beach, FL — serving Boca Raton & South Florida. Free estimates.",
   reviewCount: "192",
   rating: "4.9",
   gtmId: "AW-10930011230",
+} as const;
+
+/** Single source of truth for NAP — keep identical to Google Business Profile & schema.org */
+export const NAP = {
+  line: `${SITE.address.street}, ${SITE.address.city}, ${SITE.address.state} ${SITE.address.zip}`,
+  mapsSearchUrl: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+    `${SITE.address.street}, ${SITE.address.city}, ${SITE.address.state} ${SITE.address.zip}`
+  )}`,
+} as const;
+
+/** Reusable sentence so NAP matches GBP everywhere on-site */
+export const LOCAL_SEO = {
+  facilitySentence: `Our showroom and fabrication facility is located at ${SITE.address.street}, ${SITE.address.city}, FL ${SITE.address.zip}.`,
 } as const;
 
 export const SOCIAL = {

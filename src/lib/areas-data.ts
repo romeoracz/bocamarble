@@ -19,7 +19,7 @@ export const AREAS: AreaPage[] = [
     metaTitle:
       "Marble & Stone Countertops Boca Raton | Fabrication & Install | Boca Marble",
     metaDescription:
-      "Boca Raton's #1 countertop fabricator. Marble, granite, quartz & quartzite countertops. 1,000+ projects completed. Free estimates. Call (954) 412-9300.",
+      "Boca Raton's #1 countertop fabricator. Marble, granite, quartz & quartzite. Florida Countertop Factory brand. 192+ Google reviews. Free estimates. Call (954) 412-9300.",
     h1: "Marble & Stone Countertops in Boca Raton, FL",
     intro: "As Boca Raton's premier countertop fabrication company, we've installed thousands of surfaces across the city's most prestigious neighborhoods. From waterfront estates in Royal Palm Yacht & Country Club to modern condos in Boca West, our team delivers luxury countertops that match the elegance Boca Raton demands.",
     neighborhoods: [
@@ -49,9 +49,9 @@ export const AREAS: AreaPage[] = [
     metaTitle:
       "Countertop Installation Delray Beach | Marble & Granite | Boca Marble",
     metaDescription:
-      "Premium countertop fabrication & installation in Delray Beach. Marble, granite, quartz. Minutes from our Boca Raton facility. Free estimates.",
+      "Premium countertop fabrication & installation in Delray Beach. Marble, granite, quartz. Minutes from our Pompano Beach showroom. Free estimates.",
     h1: "Countertop Fabrication & Installation in Delray Beach, FL",
-    intro: "Just minutes north of our Boca Raton facility, Delray Beach homeowners enjoy fast turnaround times and premium countertop services. From Atlantic Avenue's vibrant restaurant scene to the luxury homes of Gulf Stream and Seagate, we serve all of Delray Beach with the same attention to quality.",
+    intro: "Just minutes north of our Pompano Beach showroom, Delray Beach homeowners enjoy fast turnaround times and premium countertop services. From Atlantic Avenue's vibrant restaurant scene to the luxury homes of Gulf Stream and Seagate, we serve all of Delray Beach with the same attention to quality.",
     neighborhoods: [
       "Atlantic Avenue",
       "Pineapple Grove",
@@ -72,9 +72,9 @@ export const AREAS: AreaPage[] = [
     metaTitle:
       "Countertop Installation Deerfield Beach | Marble & Granite | Boca Marble",
     metaDescription:
-      "Expert countertop fabrication & installation in Deerfield Beach. Marble, granite, quartz countertops. Near our Boca Raton facility. Free estimates.",
+      "Expert countertop fabrication & installation in Deerfield Beach. Marble, granite, quartz countertops. Near our Pompano Beach showroom. Free estimates.",
     h1: "Countertop Fabrication & Installation in Deerfield Beach, FL",
-    intro: "Deerfield Beach is one of our closest service areas, just south of our Boca Raton headquarters. We serve Deerfield Beach's oceanfront condos, residential communities, and commercial properties with full-service stone fabrication and installation.",
+    intro: "Deerfield Beach is one of our closest service areas — minutes from our Pompano Beach fabrication facility. We serve Deerfield Beach's oceanfront condos, residential communities, and commercial properties with full-service stone fabrication and installation.",
     neighborhoods: [
       "Cove Beach",
       "Deer Creek",
@@ -95,7 +95,7 @@ export const AREAS: AreaPage[] = [
     metaDescription:
       "Premium countertop fabrication & installation in Pompano Beach. All stone types. Quick turnaround from our South FL facility. Free estimates.",
     h1: "Countertop Fabrication & Installation in Pompano Beach, FL",
-    intro: "Pompano Beach homeowners and businesses trust Boca Marble for their countertop needs. Our proximity in Boca Raton means fast service, quick turnaround, and easy showroom access. We serve all of Pompano Beach from the beaches to the western communities.",
+    intro: "Pompano Beach homeowners and businesses trust Boca Marble — our showroom & fabrication facility is located right here in Pompano Beach for fast service, quick turnaround, and easy slab selection. We serve all of Pompano Beach from the beaches to the western communities.",
     neighborhoods: [
       "Lighthouse Point",
       "Palm Aire",
@@ -155,9 +155,9 @@ export const AREAS: AreaPage[] = [
     metaTitle:
       "Countertop Installation Boynton Beach | Marble & Granite | Boca Marble",
     metaDescription:
-      "Expert countertop fabrication & installation in Boynton Beach. All stone types. Close to our Boca Raton facility. Free estimates available.",
+      "Expert countertop fabrication & installation in Boynton Beach. All stone types. Quick access from our South Florida showroom. Free estimates available.",
     h1: "Countertop Fabrication & Installation in Boynton Beach, FL",
-    intro: "Boynton Beach residents enjoy convenient access to our Boca Raton showroom and fabrication facility. We serve Boynton Beach's diverse communities with premium countertop solutions for kitchens, bathrooms, and outdoor living spaces.",
+    intro: "Boynton Beach residents enjoy convenient access to our Pompano Beach showroom and fabrication facility. We serve Boynton Beach's diverse communities with premium countertop solutions for kitchens, bathrooms, and outdoor living spaces.",
     neighborhoods: [
       "Canyon Lakes",
       "Aberdeen",
@@ -196,9 +196,9 @@ export const AREAS: AreaPage[] = [
     metaTitle:
       "Countertop Installation Coconut Creek | Marble & Granite | Boca Marble",
     metaDescription:
-      "Quality countertop fabrication & installation in Coconut Creek. Marble, granite, quartz. Fast service from our Boca facility. Free estimates.",
+      "Quality countertop fabrication & installation in Coconut Creek. Marble, granite, quartz. Fast service from our Pompano Beach showroom. Free estimates.",
     h1: "Countertop Fabrication & Installation in Coconut Creek, FL",
-    intro: "Coconut Creek homeowners choose Boca Marble for reliable, high-quality countertop services. Our nearby Boca Raton facility ensures fast turnaround and easy access to our full stone showroom.",
+    intro: "Coconut Creek homeowners choose Boca Marble for reliable, high-quality countertop services. Our nearby Pompano Beach showroom ensures fast turnaround and easy access to our full stone inventory.",
     neighborhoods: [
       "Wyndhurst",
       "Palm Beach Farms",
@@ -262,7 +262,7 @@ export const AREAS: AreaPage[] = [
     metaDescription:
       "Premium countertop services for Wellington's luxury equestrian estates. Marble, granite, quartz. Full fabrication & installation. Free estimates.",
     h1: "Countertop Fabrication & Installation in Wellington, FL",
-    intro: "Wellington's world-renowned equestrian community demands luxury in every detail — including their countertops. We serve Wellington's estates, villas, and family homes with premium stone fabrication and installation backed by Boca Raton craftsmanship.",
+    intro: "Wellington's world-renowned equestrian community demands luxury in every detail — including their countertops. We serve Wellington's estates, villas, and family homes with premium stone fabrication and installation backed by Florida Countertop Factory craftsmanship.",
     neighborhoods: [
       "Palm Beach Polo",
       "Olympia",

@@ -61,7 +61,6 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: SITE.url,
     siteName: SITE.name,
     title:
       "Boca Marble | #1 Marble & Countertop Fabrication in Boca Raton, FL",
@@ -90,13 +89,6 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
-    },
-  },
-  alternates: {
-    canonical: SITE.url,
-    languages: {
-      "en-US": SITE.url,
-      "es-US": `${SITE.url}/es`,
     },
   },
   other: {
@@ -142,7 +134,7 @@ export default function RootLayout({
 
         {/* Geo Tags for Local SEO */}
         <meta name="geo.region" content="US-FL" />
-        <meta name="geo.placename" content="Boca Raton, Florida" />
+        <meta name="geo.placename" content="Pompano Beach, Florida" />
         <meta name="geo.position" content={`${SITE.geo.lat};${SITE.geo.lng}`} />
         <meta name="ICBM" content={`${SITE.geo.lat}, ${SITE.geo.lng}`} />
         <meta name="DC.title" content={SITE.name} />
@@ -151,7 +143,7 @@ export default function RootLayout({
         <meta name="DC.description" content={SITE.description} />
         <meta name="DC.publisher" content={SITE.legalName} />
         <meta name="DC.language" content="en" />
-        <meta name="DC.coverage" content="Boca Raton, FL, USA" />
+        <meta name="DC.coverage" content="Pompano Beach & Boca Raton, Palm Beach County, FL, USA" />
 
         {/* Content Language */}
         <meta httpEquiv="content-language" content="en-US" />

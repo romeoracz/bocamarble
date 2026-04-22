@@ -133,7 +133,7 @@ export const SERVICES: ServicePage[] = [
       {
         question: "Can quartz countertops look like marble?",
         answer:
-          "Yes! Modern quartz manufacturers produce stunning marble-look options that closely replicate Calacatta, Carrara, and Statuario marble patterns. These offer marble's beauty without the maintenance requirements. Visit our showroom to see our marble-look quartz collection.",
+          "Yes! Modern quartz manufacturers produce stunning marble-look options that closely replicate Calacatta, Carrara, and Statuario marble patterns. These offer marble's beauty without the maintenance requirements. Visit our Pompano Beach showroom to see our marble-look quartz collection.",
       },
       {
         question: "Do quartz countertops need to be sealed?",
@@ -210,7 +210,7 @@ export const SERVICES: ServicePage[] = [
         question:
           "What is the best countertop material for a kitchen in Boca Raton?",
         answer:
-          "The best kitchen countertop depends on your priorities. Quartz is ideal for low maintenance, granite offers durability and natural beauty, marble provides unmatched elegance, and quartzite combines the best of all worlds. Visit our Boca Raton showroom to compare materials side by side.",
+          "The best kitchen countertop depends on your priorities. Quartz is ideal for low maintenance, granite offers durability and natural beauty, marble provides unmatched elegance, and quartzite combines the best of all worlds. Visit our Pompano Beach showroom to compare materials side by side.",
       },
       {
         question:
@@ -356,7 +356,7 @@ export const SERVICES: ServicePage[] = [
         question:
           "What edge profiles do you offer for countertops?",
         answer:
-          "We offer 20+ edge profiles including eased, beveled, bullnose, half bullnose, ogee, dupont, mitered, waterfall, and custom profiles. Our CNC machines can create virtually any edge design. Visit our showroom to see and feel our full edge profile selection.",
+          "We offer 20+ edge profiles including eased, beveled, bullnose, half bullnose, ogee, dupont, mitered, waterfall, and custom profiles. Our CNC machines can create virtually any edge design. Visit our Pompano Beach showroom to see and feel our full edge profile selection.",
       },
     ],
     relatedServices: [
